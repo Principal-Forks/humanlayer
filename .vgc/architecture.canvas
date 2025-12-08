@@ -1,0 +1,430 @@
+{
+  "vv": {
+    "name": "HumanLayer Architecture",
+    "version": "1.0.0",
+    "nodeTypes": {
+      "component": {
+        "style": "rounded"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": "claude-code",
+      "type": "text",
+      "text": "Claude Code",
+      "x": -172,
+      "y": -197,
+      "width": 180,
+      "height": 80,
+      "color": "#7C3AED",
+      "vv": {
+        "nodeType": "component",
+        "shape": "rectangle",
+        "component": "integration"
+      }
+    },
+    {
+      "id": "slack",
+      "type": "text",
+      "text": "Slack Channel",
+      "x": 498,
+      "y": -174,
+      "width": 180,
+      "height": 80,
+      "color": "#10B981",
+      "vv": {
+        "nodeType": "component",
+        "shape": "rectangle",
+        "component": "channel"
+      }
+    },
+    {
+      "id": "email",
+      "type": "text",
+      "text": "Email Channel",
+      "x": 717,
+      "y": -176,
+      "width": 180,
+      "height": 80,
+      "color": "#10B981",
+      "vv": {
+        "nodeType": "component",
+        "shape": "rectangle",
+        "component": "channel"
+      }
+    },
+    {
+      "id": "web-ui",
+      "type": "text",
+      "text": "Web UI Channel",
+      "x": 936,
+      "y": -177,
+      "width": 180,
+      "height": 80,
+      "color": "#10B981",
+      "vv": {
+        "nodeType": "component",
+        "shape": "rectangle",
+        "component": "browser"
+      }
+    },
+    {
+      "id": "cli-channel",
+      "type": "text",
+      "text": "CLI Channel",
+      "x": 985,
+      "y": -33,
+      "width": 180,
+      "height": 80,
+      "color": "#10B981",
+      "vv": {
+        "nodeType": "component",
+        "shape": "rectangle",
+        "component": "channel"
+      }
+    },
+    {
+      "id": "hlyr",
+      "type": "text",
+      "text": "hlyr\n(TypeScript CLI + MCP)",
+      "x": -49,
+      "y": -26,
+      "width": 220,
+      "height": 100,
+      "color": "#8B5CF6",
+      "vv": {
+        "nodeType": "component",
+        "shape": "rectangle",
+        "component": "cli"
+      }
+    },
+    {
+      "id": "hld",
+      "type": "text",
+      "text": "hld\n(Go Daemon)",
+      "x": 240,
+      "y": 83,
+      "width": 220,
+      "height": 100,
+      "color": "#F97316",
+      "vv": {
+        "nodeType": "component",
+        "shape": "rectangle",
+        "component": "daemon"
+      }
+    },
+    {
+      "id": "cloud-api",
+      "type": "text",
+      "text": "HumanLayer\nCloud API",
+      "x": 703,
+      "y": -23,
+      "width": 220,
+      "height": 100,
+      "color": "#3B82F6",
+      "vv": {
+        "nodeType": "component",
+        "shape": "rectangle",
+        "component": "external"
+      }
+    },
+    {
+      "id": "tui",
+      "type": "text",
+      "text": "TUI\n(Terminal UI)",
+      "x": 238,
+      "y": -44,
+      "width": 160,
+      "height": 100,
+      "color": "#14B8A6",
+      "vv": {
+        "nodeType": "component",
+        "shape": "rectangle",
+        "component": "ui"
+      }
+    },
+    {
+      "id": "wui",
+      "type": "text",
+      "text": "humanlayer-wui\n(CodeLayer UI)\n(Tauri + React)",
+      "x": 447,
+      "y": -44,
+      "width": 200,
+      "height": 100,
+      "color": "#14B8A6",
+      "vv": {
+        "nodeType": "component",
+        "shape": "rectangle",
+        "component": "ui"
+      }
+    },
+    {
+      "id": "claudecode-go",
+      "type": "text",
+      "text": "claudecode-go\n(Claude Code SDK)",
+      "x": -173,
+      "y": 469,
+      "width": 220,
+      "height": 100,
+      "color": "#FBBF24",
+      "vv": {
+        "nodeType": "component",
+        "shape": "rectangle",
+        "component": "sdk"
+      }
+    },
+    {
+      "id": "vercel-ai-sdk",
+      "type": "text",
+      "text": "humanlayer-ts-vercel-ai-sdk\n(Vercel AI Integration)",
+      "x": 587,
+      "y": 141,
+      "width": 240,
+      "height": 100,
+      "color": "#7C3AED",
+      "vv": {
+        "nodeType": "component",
+        "shape": "rectangle",
+        "component": "integration"
+      }
+    },
+    {
+      "id": "humanlayer-ts",
+      "type": "text",
+      "text": "humanlayer-ts\n(TypeScript SDK)",
+      "x": 590,
+      "y": 372,
+      "width": 220,
+      "height": 100,
+      "color": "#FBBF24",
+      "vv": {
+        "nodeType": "component",
+        "shape": "rectangle",
+        "component": "sdk"
+      }
+    },
+    {
+      "id": "humanlayer-go",
+      "type": "text",
+      "text": "humanlayer-go\n(Go Client)",
+      "x": 687,
+      "y": 572,
+      "width": 220,
+      "height": 100,
+      "color": "#FBBF24",
+      "vv": {
+        "nodeType": "component",
+        "shape": "rectangle",
+        "component": "sdk"
+      }
+    },
+    {
+      "id": "docs",
+      "type": "text",
+      "text": "docs\n(Mintlify)",
+      "x": 987,
+      "y": 220,
+      "width": 180,
+      "height": 100,
+      "color": "#EC4899",
+      "vv": {
+        "nodeType": "component",
+        "shape": "rectangle",
+        "component": "docs"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-claude-hlyr",
+      "fromNode": "claude-code",
+      "toNode": "hlyr",
+      "label": "MCP",
+      "color": "#A78BFA",
+      "vv": {
+        "component": "mcp"
+      }
+    },
+    {
+      "id": "edge-hlyr-hld",
+      "fromNode": "hlyr",
+      "toNode": "hld",
+      "label": "JSON-RPC",
+      "color": "#60A5FA",
+      "vv": {
+        "component": "jsonrpc"
+      }
+    },
+    {
+      "id": "edge-hld-cloud",
+      "fromNode": "hld",
+      "toNode": "cloud-api",
+      "label": "HTTP",
+      "color": "#34D399",
+      "vv": {
+        "component": "http"
+      }
+    },
+    {
+      "id": "edge-cloud-slack",
+      "fromNode": "cloud-api",
+      "toNode": "slack",
+      "label": "notify",
+      "color": "#22D3EE",
+      "vv": {
+        "component": "notifies"
+      }
+    },
+    {
+      "id": "edge-cloud-email",
+      "fromNode": "cloud-api",
+      "toNode": "email",
+      "label": "notify",
+      "color": "#22D3EE",
+      "vv": {
+        "component": "notifies"
+      }
+    },
+    {
+      "id": "edge-cloud-web",
+      "fromNode": "cloud-api",
+      "toNode": "web-ui",
+      "label": "notify",
+      "color": "#22D3EE",
+      "vv": {
+        "component": "notifies"
+      }
+    },
+    {
+      "id": "edge-cloud-cli",
+      "fromNode": "cloud-api",
+      "toNode": "cli-channel",
+      "label": "notify",
+      "color": "#22D3EE",
+      "vv": {
+        "component": "notifies"
+      }
+    },
+    {
+      "id": "edge-slack-cloud",
+      "fromNode": "slack",
+      "toNode": "cloud-api",
+      "label": "respond",
+      "color": "#2DD4BF",
+      "vv": {
+        "component": "responds"
+      }
+    },
+    {
+      "id": "edge-email-cloud",
+      "fromNode": "email",
+      "toNode": "cloud-api",
+      "label": "respond",
+      "color": "#2DD4BF",
+      "vv": {
+        "component": "responds"
+      }
+    },
+    {
+      "id": "edge-web-cloud",
+      "fromNode": "web-ui",
+      "toNode": "cloud-api",
+      "label": "respond",
+      "color": "#2DD4BF",
+      "vv": {
+        "component": "responds"
+      }
+    },
+    {
+      "id": "edge-cli-cloud",
+      "fromNode": "cli-channel",
+      "toNode": "cloud-api",
+      "label": "respond",
+      "color": "#2DD4BF",
+      "vv": {
+        "component": "responds"
+      }
+    },
+    {
+      "id": "edge-tui-hld",
+      "fromNode": "tui",
+      "toNode": "hld",
+      "label": "uses",
+      "color": "#FB923C",
+      "vv": {
+        "component": "uses"
+      }
+    },
+    {
+      "id": "edge-wui-hld",
+      "fromNode": "wui",
+      "toNode": "hld",
+      "label": "uses",
+      "color": "#FB923C",
+      "vv": {
+        "component": "uses"
+      }
+    },
+    {
+      "id": "edge-vercel-ts",
+      "fromNode": "vercel-ai-sdk",
+      "toNode": "humanlayer-ts",
+      "label": "uses",
+      "color": "#FB923C",
+      "vv": {
+        "component": "uses"
+      }
+    },
+    {
+      "id": "edge-ts-cloud",
+      "fromNode": "humanlayer-ts",
+      "toNode": "cloud-api",
+      "label": "HTTP",
+      "color": "#34D399",
+      "vv": {
+        "component": "http"
+      }
+    },
+    {
+      "id": "edge-go-cloud",
+      "fromNode": "humanlayer-go",
+      "toNode": "cloud-api",
+      "label": "HTTP",
+      "color": "#34D399",
+      "vv": {
+        "component": "http"
+      }
+    },
+    {
+      "id": "edge-claudecode-claude",
+      "fromNode": "claudecode-go",
+      "toNode": "claude-code",
+      "label": "integrates",
+      "color": "#A78BFA",
+      "vv": {
+        "component": "integrates"
+      }
+    },
+    {
+      "id": "edge-claudecode-go",
+      "fromNode": "claudecode-go",
+      "toNode": "humanlayer-go",
+      "label": "uses",
+      "color": "#FB923C",
+      "vv": {
+        "component": "uses"
+      }
+    },
+    {
+      "id": "edge-hlyr-ts",
+      "fromNode": "hlyr",
+      "toNode": "humanlayer-ts",
+      "label": "uses",
+      "color": "#FB923C",
+      "vv": {
+        "component": "uses"
+      }
+    }
+  ]
+}

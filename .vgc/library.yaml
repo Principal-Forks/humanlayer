@@ -1,0 +1,85 @@
+version: "1.0.0"
+name: "HumanLayer Component Library"
+
+nodeComponents:
+  # SDKs and Libraries
+  sdk:
+    color: "#10B981"  # vibrant green
+    icon: "Package"
+
+  # Services and Daemons
+  daemon:
+    color: "#06B6D4"  # vibrant cyan
+    icon: "Server"
+
+  # CLI Tools
+  cli:
+    color: "#F97316"  # vibrant orange
+    icon: "Terminal"
+
+  # User Interfaces
+  ui:
+    color: "#A855F7"  # vibrant purple
+    icon: "Monitor"
+
+  # External Services
+  external:
+    color: "#EF4444"  # vibrant red
+    icon: "Cloud"
+
+  # Documentation
+  docs:
+    color: "#EAB308"  # vibrant yellow
+    icon: "BookOpen"
+
+  # Integration/Client
+  integration:
+    color: "#22C55E"  # bright green
+    icon: "Puzzle"
+
+  # Contact Channels
+  channel:
+    color: "#FBBF24"  # bright yellow/amber
+    icon: "MessageSquare"
+
+  # Browser/Web
+  browser:
+    color: "#8B5CF6"  # bright purple
+    icon: "Globe"
+
+edgeComponents:
+  # Communication protocols
+  mcp:
+    style: "solid"
+    label: "MCP Protocol"
+    color: "#3B82F6"  # blue
+
+  jsonrpc:
+    style: "solid"
+    label: "JSON-RPC"
+    color: "#8B5CF6"  # purple
+
+  http:
+    style: "solid"
+    label: "HTTP/REST"
+    color: "#10B981"  # green
+
+  uses:
+    style: "dashed"
+    label: "uses"
+    color: "#6B7280"  # gray
+
+  integrates:
+    style: "dotted"
+    label: "integrates"
+    color: "#EC4899"  # pink
+
+  notifies:
+    style: "animated"
+    label: "notifies"
+    color: "#F59E0B"  # amber
+
+  responds:
+    style: "dashed"
+    label: "responds via"
+    color: "#14B8A6"  # teal
