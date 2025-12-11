@@ -1,10 +1,9 @@
 {
-  "vv": {
+  "pv": {
     "name": "HumanLayer Architecture",
     "version": "1.0.0",
     "nodeTypes": {
       "component": {
-        "style": "rounded"
       }
     }
   },
@@ -18,10 +17,9 @@
       "width": 180,
       "height": 80,
       "color": "#7C3AED",
-      "vv": {
+      "pv": {
         "nodeType": "component",
-        "shape": "rectangle",
-        "component": "integration"
+        "shape": "rectangle"
       }
     },
     {
@@ -33,10 +31,9 @@
       "width": 180,
       "height": 80,
       "color": "#10B981",
-      "vv": {
+      "pv": {
         "nodeType": "component",
-        "shape": "rectangle",
-        "component": "channel"
+        "shape": "rectangle"
       }
     },
     {
@@ -48,10 +45,9 @@
       "width": 180,
       "height": 80,
       "color": "#10B981",
-      "vv": {
+      "pv": {
         "nodeType": "component",
-        "shape": "rectangle",
-        "component": "channel"
+        "shape": "rectangle"
       }
     },
     {
@@ -63,10 +59,9 @@
       "width": 180,
       "height": 80,
       "color": "#10B981",
-      "vv": {
+      "pv": {
         "nodeType": "component",
-        "shape": "rectangle",
-        "component": "browser"
+        "shape": "rectangle"
       }
     },
     {
@@ -78,10 +73,9 @@
       "width": 180,
       "height": 80,
       "color": "#10B981",
-      "vv": {
+      "pv": {
         "nodeType": "component",
-        "shape": "rectangle",
-        "component": "channel"
+        "shape": "rectangle"
       }
     },
     {
@@ -93,10 +87,9 @@
       "width": 220,
       "height": 100,
       "color": "#8B5CF6",
-      "vv": {
+      "pv": {
         "nodeType": "component",
-        "shape": "rectangle",
-        "component": "cli"
+        "shape": "rectangle"
       }
     },
     {
@@ -108,10 +101,9 @@
       "width": 220,
       "height": 100,
       "color": "#F97316",
-      "vv": {
+      "pv": {
         "nodeType": "component",
-        "shape": "rectangle",
-        "component": "daemon"
+        "shape": "rectangle"
       }
     },
     {
@@ -123,10 +115,9 @@
       "width": 220,
       "height": 100,
       "color": "#3B82F6",
-      "vv": {
+      "pv": {
         "nodeType": "component",
-        "shape": "rectangle",
-        "component": "external"
+        "shape": "rectangle"
       }
     },
     {
@@ -138,10 +129,9 @@
       "width": 160,
       "height": 100,
       "color": "#14B8A6",
-      "vv": {
+      "pv": {
         "nodeType": "component",
-        "shape": "rectangle",
-        "component": "ui"
+        "shape": "rectangle"
       }
     },
     {
@@ -153,10 +143,9 @@
       "width": 200,
       "height": 100,
       "color": "#14B8A6",
-      "vv": {
+      "pv": {
         "nodeType": "component",
-        "shape": "rectangle",
-        "component": "ui"
+        "shape": "rectangle"
       }
     },
     {
@@ -168,10 +157,9 @@
       "width": 220,
       "height": 100,
       "color": "#FBBF24",
-      "vv": {
+      "pv": {
         "nodeType": "component",
-        "shape": "rectangle",
-        "component": "sdk"
+        "shape": "rectangle"
       }
     },
     {
@@ -183,10 +171,9 @@
       "width": 240,
       "height": 100,
       "color": "#7C3AED",
-      "vv": {
+      "pv": {
         "nodeType": "component",
-        "shape": "rectangle",
-        "component": "integration"
+        "shape": "rectangle"
       }
     },
     {
@@ -198,10 +185,9 @@
       "width": 220,
       "height": 100,
       "color": "#FBBF24",
-      "vv": {
+      "pv": {
         "nodeType": "component",
-        "shape": "rectangle",
-        "component": "sdk"
+        "shape": "rectangle"
       }
     },
     {
@@ -213,10 +199,9 @@
       "width": 220,
       "height": 100,
       "color": "#FBBF24",
-      "vv": {
+      "pv": {
         "nodeType": "component",
-        "shape": "rectangle",
-        "component": "sdk"
+        "shape": "rectangle"
       }
     },
     {
@@ -228,10 +213,9 @@
       "width": 180,
       "height": 100,
       "color": "#EC4899",
-      "vv": {
+      "pv": {
         "nodeType": "component",
-        "shape": "rectangle",
-        "component": "docs"
+        "shape": "rectangle"
       }
     }
   ],
@@ -242,8 +226,7 @@
       "toNode": "hlyr",
       "label": "MCP",
       "color": "#A78BFA",
-      "vv": {
-        "component": "mcp"
+      "pv": {
       }
     },
     {
@@ -252,8 +235,7 @@
       "toNode": "hld",
       "label": "JSON-RPC",
       "color": "#60A5FA",
-      "vv": {
-        "component": "jsonrpc"
+      "pv": {
       }
     },
     {
@@ -262,8 +244,7 @@
       "toNode": "cloud-api",
       "label": "HTTP",
       "color": "#34D399",
-      "vv": {
-        "component": "http"
+      "pv": {
       }
     },
     {
@@ -272,8 +253,7 @@
       "toNode": "slack",
       "label": "notify",
       "color": "#22D3EE",
-      "vv": {
-        "component": "notifies"
+      "pv": {
       }
     },
     {
@@ -282,8 +262,7 @@
       "toNode": "email",
       "label": "notify",
       "color": "#22D3EE",
-      "vv": {
-        "component": "notifies"
+      "pv": {
       }
     },
     {
@@ -292,8 +271,7 @@
       "toNode": "web-ui",
       "label": "notify",
       "color": "#22D3EE",
-      "vv": {
-        "component": "notifies"
+      "pv": {
       }
     },
     {
@@ -302,8 +280,7 @@
       "toNode": "cli-channel",
       "label": "notify",
       "color": "#22D3EE",
-      "vv": {
-        "component": "notifies"
+      "pv": {
       }
     },
     {
@@ -312,8 +289,7 @@
       "toNode": "cloud-api",
       "label": "respond",
       "color": "#2DD4BF",
-      "vv": {
-        "component": "responds"
+      "pv": {
       }
     },
     {
@@ -322,8 +298,7 @@
       "toNode": "cloud-api",
       "label": "respond",
       "color": "#2DD4BF",
-      "vv": {
-        "component": "responds"
+      "pv": {
       }
     },
     {
@@ -332,8 +307,7 @@
       "toNode": "cloud-api",
       "label": "respond",
       "color": "#2DD4BF",
-      "vv": {
-        "component": "responds"
+      "pv": {
       }
     },
     {
@@ -342,8 +316,7 @@
       "toNode": "cloud-api",
       "label": "respond",
       "color": "#2DD4BF",
-      "vv": {
-        "component": "responds"
+      "pv": {
       }
     },
     {
@@ -352,8 +325,7 @@
       "toNode": "hld",
       "label": "uses",
       "color": "#FB923C",
-      "vv": {
-        "component": "uses"
+      "pv": {
       }
     },
     {
@@ -362,8 +334,7 @@
       "toNode": "hld",
       "label": "uses",
       "color": "#FB923C",
-      "vv": {
-        "component": "uses"
+      "pv": {
       }
     },
     {
@@ -372,8 +343,7 @@
       "toNode": "humanlayer-ts",
       "label": "uses",
       "color": "#FB923C",
-      "vv": {
-        "component": "uses"
+      "pv": {
       }
     },
     {
@@ -382,8 +352,7 @@
       "toNode": "cloud-api",
       "label": "HTTP",
       "color": "#34D399",
-      "vv": {
-        "component": "http"
+      "pv": {
       }
     },
     {
@@ -392,8 +361,7 @@
       "toNode": "cloud-api",
       "label": "HTTP",
       "color": "#34D399",
-      "vv": {
-        "component": "http"
+      "pv": {
       }
     },
     {
@@ -402,8 +370,7 @@
       "toNode": "claude-code",
       "label": "integrates",
       "color": "#A78BFA",
-      "vv": {
-        "component": "integrates"
+      "pv": {
       }
     },
     {
@@ -412,8 +379,7 @@
       "toNode": "humanlayer-go",
       "label": "uses",
       "color": "#FB923C",
-      "vv": {
-        "component": "uses"
+      "pv": {
       }
     },
     {
@@ -422,8 +388,7 @@
       "toNode": "humanlayer-ts",
       "label": "uses",
       "color": "#FB923C",
-      "vv": {
-        "component": "uses"
+      "pv": {
       }
     }
   ]
