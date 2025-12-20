@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "timestamp": "2025-12-18T23:39:38.026Z",
+    "timestamp": "2025-12-18T23:58:31.388Z",
     "version": "1.0.0",
     "totalPackages": 4,
     "totalLenses": 12
@@ -18,8 +18,8 @@
       "execution": {
         "success": true,
         "exitCode": 1,
-        "duration": 1471,
-        "timestamp": 1766101161150
+        "duration": 1500,
+        "timestamp": 1766102294608
       },
       "issues": [],
       "metrics": {
@@ -76,8 +76,8 @@
       "execution": {
         "success": true,
         "exitCode": 1,
-        "duration": 1024,
-        "timestamp": 1766101162174
+        "duration": 1028,
+        "timestamp": 1766102295637
       },
       "issues": [],
       "metrics": {
@@ -114,8 +114,8 @@
       "execution": {
         "success": true,
         "exitCode": 2,
-        "duration": 1115,
-        "timestamp": 1766101163289
+        "duration": 1164,
+        "timestamp": 1766102296801
       },
       "issues": [],
       "metrics": {},
@@ -133,8 +133,8 @@
       "execution": {
         "success": true,
         "exitCode": 0,
-        "duration": 1424,
-        "timestamp": 1766101164714
+        "duration": 1418,
+        "timestamp": 1766102298219
       },
       "issues": [],
       "metrics": {
@@ -555,8 +555,8 @@
       "execution": {
         "success": true,
         "exitCode": 1,
-        "duration": 1497,
-        "timestamp": 1766101166211
+        "duration": 1496,
+        "timestamp": 1766102299716
       },
       "issues": [],
       "metrics": {
@@ -590,7 +590,7 @@
       },
       "fileMetrics": [
         {
-          "file": "tests/configShow.e2e.test.ts",
+          "file": "src/thoughtsConfig.test.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -599,7 +599,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/thoughtsConfig.test.ts",
+          "file": "tests/configShow.e2e.test.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -631,8 +631,8 @@
       "execution": {
         "success": true,
         "exitCode": 2,
-        "duration": 1042,
-        "timestamp": 1766101167254
+        "duration": 1092,
+        "timestamp": 1766102300808
       },
       "issues": [],
       "metrics": {},
@@ -650,8 +650,8 @@
       "execution": {
         "success": true,
         "exitCode": 1,
-        "duration": 2474,
-        "timestamp": 1766101169730
+        "duration": 2495,
+        "timestamp": 1766102303305
       },
       "issues": [
         {
@@ -3689,8 +3689,8 @@
       "execution": {
         "success": true,
         "exitCode": 1,
-        "duration": 964,
-        "timestamp": 1766101170695
+        "duration": 1109,
+        "timestamp": 1766102304414
       },
       "issues": [],
       "metrics": {
@@ -3727,8 +3727,8 @@
       "execution": {
         "success": true,
         "exitCode": 1,
-        "duration": 2131,
-        "timestamp": 1766101172828
+        "duration": 2161,
+        "timestamp": 1766102306575
       },
       "issues": [],
       "metrics": {
@@ -3762,97 +3762,7 @@
       },
       "fileMetrics": [
         {
-          "file": "src/components/internal/SessionDetail/components/__tests__/markdown-patterns.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/lib/telemetry/sentry.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
           "file": "src/stores/demo/slices/themeSlice.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/components/internal/SessionDetail/__tests__/formatToolResult.test.tsx",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/stores/demo/slices/launcherSlice.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/lib/daemon/http-client.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/stores/demo/composedDemoStore.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/components/internal/SessionDetail/hooks/useAutoScroll.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/lib/telemetry/posthog-sanitizer.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/components/internal/ConversationStream/EventContent/DiffViewer/DiffViewer.test.tsx",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/stores/demo/slices/appSlice.test.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3870,52 +3780,34 @@
           "hintCount": 0
         },
         {
+          "file": "src/lib/telemetry/sentry.test.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "src/stores/demo/slices/appSlice.test.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "src/stores/demo/slices/launcherSlice.test.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
           "file": "src/stores/demo/slices/sessionSlice.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/hooks/__tests__/useDaemonConnection.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/hooks/useFileBrowser.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/components/ui/button.test.tsx",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/utils/formatting.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/AppStore.events.test.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3933,25 +3825,16 @@
           "hintCount": 0
         },
         {
+          "file": "src/components/ui/button.test.tsx",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
           "file": "src/utils/ansiParser.test.tsx",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/components/CommandPaletteMenu.test.tsx",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/AppStore.test.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3969,6 +3852,60 @@
           "hintCount": 0
         },
         {
+          "file": "src/utils/formatting.test.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "src/stores/demo/composedDemoStore.test.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "src/hooks/__tests__/useDaemonConnection.test.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "src/components/internal/SessionDetail/__tests__/formatToolResult.test.tsx",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "src/hooks/useFileBrowser.test.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "src/components/internal/ConversationStream/EventContent/DiffViewer/DiffViewer.test.tsx",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
           "file": "src/AppStore.archive.test.ts",
           "score": 100,
           "issueCount": 0,
@@ -3978,7 +3915,70 @@
           "hintCount": 0
         },
         {
+          "file": "src/components/internal/SessionDetail/components/__tests__/markdown-patterns.test.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "src/components/CommandPaletteMenu.test.tsx",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "src/components/internal/SessionDetail/hooks/useAutoScroll.test.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "src/AppStore.events.test.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "src/AppStore.test.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "src/lib/telemetry/posthog-sanitizer.test.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
           "file": "src/AppStore.sync.test.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "src/lib/daemon/http-client.test.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -4001,8 +4001,8 @@
       "execution": {
         "success": true,
         "exitCode": 2,
-        "duration": 1147,
-        "timestamp": 1766101173975
+        "duration": 1054,
+        "timestamp": 1766102307630
       },
       "issues": [],
       "metrics": {},
@@ -4020,8 +4020,8 @@
       "execution": {
         "success": true,
         "exitCode": 1,
-        "duration": 4046,
-        "timestamp": 1766101178025
+        "duration": 3754,
+        "timestamp": 1766102311387
       },
       "issues": [
         {
@@ -12984,7 +12984,7 @@
         "success": true,
         "exitCode": 1,
         "duration": 0,
-        "timestamp": 1766101178025
+        "timestamp": 1766102311387
       },
       "issues": [
         {

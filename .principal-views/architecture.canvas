@@ -3,8 +3,7 @@
     "name": "HumanLayer Architecture",
     "version": "1.0.0",
     "nodeTypes": {
-      "component": {
-      }
+      "component": {}
     }
   },
   "nodes": [
@@ -82,8 +81,8 @@
       "id": "hlyr",
       "type": "text",
       "text": "hlyr\n(TypeScript CLI + MCP)",
-      "x": -49,
-      "y": -26,
+      "x": 11,
+      "y": -27,
       "width": 220,
       "height": 100,
       "color": "#8B5CF6",
@@ -96,8 +95,8 @@
       "id": "hld",
       "type": "text",
       "text": "hld\n(Go Daemon)",
-      "x": 240,
-      "y": 83,
+      "x": 356,
+      "y": 107,
       "width": 220,
       "height": 100,
       "color": "#F97316",
@@ -166,8 +165,8 @@
       "id": "vercel-ai-sdk",
       "type": "text",
       "text": "humanlayer-ts-vercel-ai-sdk\n(Vercel AI Integration)",
-      "x": 587,
-      "y": 141,
+      "x": -96,
+      "y": 201,
       "width": 240,
       "height": 100,
       "color": "#7C3AED",
@@ -180,8 +179,8 @@
       "id": "humanlayer-ts",
       "type": "text",
       "text": "humanlayer-ts\n(TypeScript SDK)",
-      "x": 590,
-      "y": 372,
+      "x": 207,
+      "y": 326,
       "width": 220,
       "height": 100,
       "color": "#FBBF24",
@@ -194,8 +193,8 @@
       "id": "humanlayer-go",
       "type": "text",
       "text": "humanlayer-go\n(Go Client)",
-      "x": 687,
-      "y": 572,
+      "x": 726,
+      "y": 477,
       "width": 220,
       "height": 100,
       "color": "#FBBF24",
@@ -228,8 +227,7 @@
       "toSide": "left",
       "label": "MCP",
       "color": "#A78BFA",
-      "pv": {
-      }
+      "pv": { "edgeType": "mcp" }
     },
     {
       "id": "edge-hlyr-hld",
@@ -239,8 +237,7 @@
       "toSide": "left",
       "label": "JSON-RPC",
       "color": "#60A5FA",
-      "pv": {
-      }
+      "pv": { "edgeType": "jsonrpc" }
     },
     {
       "id": "edge-hld-cloud",
@@ -250,8 +247,7 @@
       "toSide": "left",
       "label": "HTTP",
       "color": "#34D399",
-      "pv": {
-      }
+      "pv": { "edgeType": "http" }
     },
     {
       "id": "edge-cloud-slack",
@@ -261,8 +257,7 @@
       "toSide": "bottom",
       "label": "notify",
       "color": "#22D3EE",
-      "pv": {
-      }
+      "pv": { "edgeType": "notifies" }
     },
     {
       "id": "edge-cloud-email",
@@ -272,8 +267,7 @@
       "toSide": "bottom",
       "label": "notify",
       "color": "#22D3EE",
-      "pv": {
-      }
+      "pv": { "edgeType": "notifies" }
     },
     {
       "id": "edge-cloud-web",
@@ -283,8 +277,7 @@
       "toSide": "bottom",
       "label": "notify",
       "color": "#22D3EE",
-      "pv": {
-      }
+      "pv": { "edgeType": "notifies" }
     },
     {
       "id": "edge-cloud-cli",
@@ -294,8 +287,7 @@
       "toSide": "left",
       "label": "notify",
       "color": "#22D3EE",
-      "pv": {
-      }
+      "pv": { "edgeType": "notifies" }
     },
     {
       "id": "edge-slack-cloud",
@@ -305,8 +297,7 @@
       "toSide": "top",
       "label": "respond",
       "color": "#2DD4BF",
-      "pv": {
-      }
+      "pv": { "edgeType": "responds" }
     },
     {
       "id": "edge-email-cloud",
@@ -316,8 +307,7 @@
       "toSide": "top",
       "label": "respond",
       "color": "#2DD4BF",
-      "pv": {
-      }
+      "pv": { "edgeType": "responds" }
     },
     {
       "id": "edge-web-cloud",
@@ -327,8 +317,7 @@
       "toSide": "top",
       "label": "respond",
       "color": "#2DD4BF",
-      "pv": {
-      }
+      "pv": { "edgeType": "responds" }
     },
     {
       "id": "edge-cli-cloud",
@@ -338,8 +327,7 @@
       "toSide": "bottom",
       "label": "respond",
       "color": "#2DD4BF",
-      "pv": {
-      }
+      "pv": { "edgeType": "responds" }
     },
     {
       "id": "edge-tui-hld",
@@ -349,8 +337,7 @@
       "toSide": "top",
       "label": "uses",
       "color": "#FB923C",
-      "pv": {
-      }
+      "pv": { "edgeType": "uses" }
     },
     {
       "id": "edge-wui-hld",
@@ -360,8 +347,7 @@
       "toSide": "top",
       "label": "uses",
       "color": "#FB923C",
-      "pv": {
-      }
+      "pv": { "edgeType": "uses" }
     },
     {
       "id": "edge-vercel-ts",
@@ -371,8 +357,7 @@
       "toSide": "top",
       "label": "uses",
       "color": "#FB923C",
-      "pv": {
-      }
+      "pv": { "edgeType": "uses" }
     },
     {
       "id": "edge-ts-cloud",
@@ -382,8 +367,7 @@
       "toSide": "bottom",
       "label": "HTTP",
       "color": "#34D399",
-      "pv": {
-      }
+      "pv": { "edgeType": "http" }
     },
     {
       "id": "edge-go-cloud",
@@ -393,8 +377,7 @@
       "toSide": "bottom",
       "label": "HTTP",
       "color": "#34D399",
-      "pv": {
-      }
+      "pv": { "edgeType": "http" }
     },
     {
       "id": "edge-claudecode-claude",
@@ -404,8 +387,7 @@
       "toSide": "bottom",
       "label": "integrates",
       "color": "#A78BFA",
-      "pv": {
-      }
+      "pv": { "edgeType": "integrates" }
     },
     {
       "id": "edge-claudecode-go",
@@ -415,8 +397,7 @@
       "toSide": "top",
       "label": "uses",
       "color": "#FB923C",
-      "pv": {
-      }
+      "pv": { "edgeType": "uses" }
     },
     {
       "id": "edge-hlyr-ts",
@@ -426,7 +407,56 @@
       "toSide": "right",
       "label": "uses",
       "color": "#FB923C",
+      "pv": { "edgeType": "uses" }
+    },
+    {
+      "id": "edge-humanlayer-ts-cloud-api-1766097923733",
+      "fromNode": "humanlayer-ts",
+      "toNode": "cloud-api",
+      "fromSide": "bottom",
+      "toSide": "bottom",
       "pv": {
+        "edgeType": "http"
+      }
+    },
+    {
+      "id": "edge-hlyr-humanlayer-ts-1766097923733",
+      "fromNode": "hlyr",
+      "toNode": "humanlayer-ts",
+      "fromSide": "bottom",
+      "toSide": "left",
+      "pv": {
+        "edgeType": "uses"
+      }
+    },
+    {
+      "id": "edge-humanlayer-go-cloud-api-1766097953421",
+      "fromNode": "humanlayer-go",
+      "toNode": "cloud-api",
+      "fromSide": "right",
+      "toSide": "bottom",
+      "pv": {
+        "edgeType": "http"
+      }
+    },
+    {
+      "id": "edge-tui-hld-1766270024309",
+      "fromNode": "tui",
+      "toNode": "hld",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "pv": {
+        "edgeType": "uses"
+      }
+    },
+    {
+      "id": "edge-wui-hld-1766270024310",
+      "fromNode": "wui",
+      "toNode": "hld",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "pv": {
+        "edgeType": "uses"
       }
     }
   ]
