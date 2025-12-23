@@ -1,29 +1,29 @@
 {
   "metadata": {
-    "timestamp": "2025-12-18T23:58:31.388Z",
+    "timestamp": "2025-12-22T23:40:36.764Z",
     "version": "1.0.0",
-    "totalPackages": 4,
+    "totalPackages": 5,
     "totalLenses": 12
   },
   "results": [
     {
       "package": {
-        "name": "@humanlayer/hld-sdk",
-        "path": "hld/sdk/typescript"
+        "name": "@humanlayer/hld-tests",
+        "path": "hld/e2e"
       },
       "lens": {
-        "id": "test",
-        "command": "test"
+        "id": "bun-test",
+        "command": "test:e2e"
       },
       "execution": {
         "success": true,
         "exitCode": 1,
-        "duration": 1500,
-        "timestamp": 1766102294608
+        "duration": 139,
+        "timestamp": 1766446824095
       },
       "issues": [],
       "metrics": {
-        "filesAnalyzed": 1,
+        "filesAnalyzed": 0,
         "totalIssues": 0,
         "issuesBySeverity": {
           "error": 0,
@@ -37,32 +37,90 @@
           "passedTests": 0,
           "failedTests": 0,
           "skippedTests": 0,
-          "testSuites": 1,
-          "passedSuites": 0,
-          "failedSuites": 1,
+          "expectCalls": 0,
           "passRate": 0,
           "duration": 0,
-          "slowestTests": [],
-          "snapshot": {
-            "total": 0,
-            "matched": 0,
-            "unmatched": 0,
-            "updated": 0
-          }
+          "testFilesRun": 0,
+          "functionCoverage": 0,
+          "lineCoverage": 0,
+          "sourceFilesWithCoverage": 0
         }
       },
-      "fileMetrics": [
-        {
-          "file": "src/middleware.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
+      "fileMetrics": [],
+      "qualityContext": {
+        "lensId": "bun-test",
+        "operation": "check",
+        "availableLenses": [
+          "bun-test"
+        ],
+        "missingLenses": [
+          "eslint",
+          "typescript",
+          "test",
+          "prettier",
+          "knip",
+          "typedoc",
+          "alexandria"
+        ]
+      }
+    },
+    {
+      "package": {
+        "name": "@humanlayer/hld-tests",
+        "path": "hld/e2e"
+      },
+      "lens": {
+        "id": "bun-test",
+        "command": "test:e2e:manual"
+      },
+      "execution": {
+        "success": true,
+        "exitCode": 1,
+        "duration": 96,
+        "timestamp": 1766446824191
+      },
+      "issues": [],
+      "metrics": {
+        "filesAnalyzed": 0,
+        "totalIssues": 0,
+        "issuesBySeverity": {
+          "error": 0,
+          "warning": 0,
+          "info": 0,
+          "hint": 0
+        },
+        "executionTime": 0,
+        "custom": {
+          "totalTests": 0,
+          "passedTests": 0,
+          "failedTests": 0,
+          "skippedTests": 0,
+          "expectCalls": 0,
+          "passRate": 0,
+          "duration": 0,
+          "testFilesRun": 0,
+          "functionCoverage": 0,
+          "lineCoverage": 0,
+          "sourceFilesWithCoverage": 0
         }
-      ],
-      "qualityContext": {}
+      },
+      "fileMetrics": [],
+      "qualityContext": {
+        "lensId": "bun-test",
+        "operation": "check",
+        "availableLenses": [
+          "bun-test"
+        ],
+        "missingLenses": [
+          "eslint",
+          "typescript",
+          "test",
+          "prettier",
+          "knip",
+          "typedoc",
+          "alexandria"
+        ]
+      }
     },
     {
       "package": {
@@ -75,13 +133,13 @@
       },
       "execution": {
         "success": true,
-        "exitCode": 1,
-        "duration": 1028,
-        "timestamp": 1766102295637
+        "exitCode": 0,
+        "duration": 498,
+        "timestamp": 1766446824692
       },
       "issues": [],
       "metrics": {
-        "filesAnalyzed": 0,
+        "filesAnalyzed": 84,
         "totalIssues": 0,
         "issuesBySeverity": {
           "error": 0,
@@ -99,7 +157,764 @@
           "topErrors": []
         }
       },
-      "fileMetrics": [],
+      "fileMetrics": [
+        {
+          "file": "hld/sdk/typescript/src/generated/runtime.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/Agent.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/ApprovalStatus.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/Approval.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/ApprovalResponse.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/ApprovalsResponse.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/BulkArchiveRequest.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/BulkArchiveResponseData.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/BulkArchiveResponse.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/BulkRestoreDraftsRequest.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/BulkRestoreDraftsResponseData.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/BulkRestoreDraftsResponse.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/ConfigResponse.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/MCPServer.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/MCPConfig.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/ContinueSessionRequest.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/ContinueSessionResponseData.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/ContinueSessionResponse.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/ConversationEvent.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/ConversationResponse.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/CreateApprovalRequest.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/CreateApprovalResponseData.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/CreateApprovalResponse.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/CreateDirectory200Response.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/CreateDirectoryRequest.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/CreateSessionRequest.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/CreateSessionResponseData.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/CreateSessionResponse.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/DebugInfoResponse.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/DecideApprovalRequest.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/DecideApprovalResponseData.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/DecideApprovalResponse.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/DirectoryNotFoundResponse.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/DiscoverAgents200Response.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/DiscoverAgentsRequest.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/ErrorDetail.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/ErrorResponse.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/EventType.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/Event.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/FileMatch.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/FileSnapshot.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/FuzzySearchFilesRequest.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/SearchMetadata.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/FuzzySearchFilesResponse.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/HealthResponseDependenciesClaude.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/HealthResponseDependencies.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/HealthResponse.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/InterruptSessionResponseData.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/InterruptSessionResponse.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/LaunchDraftSessionRequest.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/RecentPath.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/RecentPathsResponse.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/SessionStatus.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/Session.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/SessionResponse.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/SessionSearchResponse.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/SessionsResponseCounts.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/SessionsResponse.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/SlashCommand.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/SlashCommandsResponse.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/SnapshotsResponse.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/UpdateConfigRequest.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/UpdateSessionRequest.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/UpdateUserSettingsRequest.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/UserSettings.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/UserSettingsResponse.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/ValidateDirectoryRequest.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/ValidateDirectoryResponse.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/index.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/apis/AgentsApi.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/apis/ApprovalsApi.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/apis/FilesApi.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/apis/ProxyManualApi.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/apis/SessionsApi.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/apis/SettingsApi.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/apis/SseManualApi.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/apis/SystemApi.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/apis/index.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/index.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/middleware.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/client.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/index.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/apis/EventsApi.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        },
+        {
+          "file": "hld/sdk/typescript/src/generated/models/DatabaseInfoResponse.ts",
+          "score": 100,
+          "issueCount": 0,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0
+        }
+      ],
       "qualityContext": {}
     },
     {
@@ -114,8 +929,8 @@
       "execution": {
         "success": true,
         "exitCode": 2,
-        "duration": 1164,
-        "timestamp": 1766102296801
+        "duration": 1152,
+        "timestamp": 1766446825844
       },
       "issues": [],
       "metrics": {},
@@ -133,8 +948,8 @@
       "execution": {
         "success": true,
         "exitCode": 0,
-        "duration": 1418,
-        "timestamp": 1766102298219
+        "duration": 1382,
+        "timestamp": 1766446827228
       },
       "issues": [],
       "metrics": {
@@ -154,7 +969,7 @@
       },
       "fileMetrics": [
         {
-          "file": ".eslintrc.json",
+          "file": "hlyr/.eslintrc.json",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -163,7 +978,7 @@
           "hintCount": 0
         },
         {
-          "file": ".gitignore",
+          "file": "hlyr/.gitignore",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -172,7 +987,7 @@
           "hintCount": 0
         },
         {
-          "file": ".npmignore",
+          "file": "hlyr/.npmignore",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -181,7 +996,7 @@
           "hintCount": 0
         },
         {
-          "file": "bun.lock",
+          "file": "hlyr/bun.lock",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -190,7 +1005,7 @@
           "hintCount": 0
         },
         {
-          "file": "CHANGELOG.md",
+          "file": "hlyr/CHANGELOG.md",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -199,7 +1014,7 @@
           "hintCount": 0
         },
         {
-          "file": "config.md",
+          "file": "hlyr/config.md",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -208,7 +1023,7 @@
           "hintCount": 0
         },
         {
-          "file": "hack/test-local-approvals.ts",
+          "file": "hlyr/hack/test-local-approvals.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -217,7 +1032,7 @@
           "hintCount": 0
         },
         {
-          "file": "humanlayer.example.json",
+          "file": "hlyr/humanlayer.example.json",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -226,7 +1041,7 @@
           "hintCount": 0
         },
         {
-          "file": "Makefile",
+          "file": "hlyr/Makefile",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -235,7 +1050,7 @@
           "hintCount": 0
         },
         {
-          "file": "package-lock.json",
+          "file": "hlyr/package-lock.json",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -244,7 +1059,7 @@
           "hintCount": 0
         },
         {
-          "file": "package.json",
+          "file": "hlyr/package.json",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -253,7 +1068,7 @@
           "hintCount": 0
         },
         {
-          "file": "prettier.config.cjs",
+          "file": "hlyr/prettier.config.cjs",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -262,7 +1077,7 @@
           "hintCount": 0
         },
         {
-          "file": "README.md",
+          "file": "hlyr/README.md",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -271,7 +1086,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/commands/claude.ts",
+          "file": "hlyr/src/commands/claude.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -280,7 +1095,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/commands/claude/init.ts",
+          "file": "hlyr/src/commands/claude/init.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -289,7 +1104,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/commands/configShow.ts",
+          "file": "hlyr/src/commands/configShow.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -298,7 +1113,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/commands/joinWaitlist.ts",
+          "file": "hlyr/src/commands/joinWaitlist.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -307,7 +1122,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/commands/launch.ts",
+          "file": "hlyr/src/commands/launch.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -316,7 +1131,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/commands/thoughts.ts",
+          "file": "hlyr/src/commands/thoughts.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -325,7 +1140,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/commands/thoughts/config.ts",
+          "file": "hlyr/src/commands/thoughts/config.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -334,7 +1149,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/commands/thoughts/init.ts",
+          "file": "hlyr/src/commands/thoughts/init.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -343,7 +1158,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/commands/thoughts/profile/create.ts",
+          "file": "hlyr/src/commands/thoughts/profile/create.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -352,7 +1167,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/commands/thoughts/profile/delete.ts",
+          "file": "hlyr/src/commands/thoughts/profile/delete.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -361,7 +1176,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/commands/thoughts/profile/list.ts",
+          "file": "hlyr/src/commands/thoughts/profile/list.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -370,7 +1185,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/commands/thoughts/profile/show.ts",
+          "file": "hlyr/src/commands/thoughts/profile/show.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -379,7 +1194,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/commands/thoughts/status.ts",
+          "file": "hlyr/src/commands/thoughts/status.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -388,7 +1203,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/commands/thoughts/sync.ts",
+          "file": "hlyr/src/commands/thoughts/sync.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -397,7 +1212,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/commands/thoughts/uninit.ts",
+          "file": "hlyr/src/commands/thoughts/uninit.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -406,7 +1221,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/config.ts",
+          "file": "hlyr/src/config.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -415,7 +1230,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/daemonClient.ts",
+          "file": "hlyr/src/daemonClient.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -424,7 +1239,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/index.ts",
+          "file": "hlyr/src/index.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -433,7 +1248,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/mcp.ts",
+          "file": "hlyr/src/mcp.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -442,7 +1257,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/mcpLogger.ts",
+          "file": "hlyr/src/mcpLogger.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -451,7 +1266,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/thoughtsConfig.test.ts",
+          "file": "hlyr/src/thoughtsConfig.test.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -460,7 +1275,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/thoughtsConfig.ts",
+          "file": "hlyr/src/thoughtsConfig.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -469,7 +1284,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/utils/invocation.ts",
+          "file": "hlyr/src/utils/invocation.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -478,7 +1293,7 @@
           "hintCount": 0
         },
         {
-          "file": "test_local_approvals.md",
+          "file": "hlyr/test_local_approvals.md",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -487,7 +1302,7 @@
           "hintCount": 0
         },
         {
-          "file": "tests/claudeInit.e2e.test.ts",
+          "file": "hlyr/tests/claudeInit.e2e.test.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -496,7 +1311,7 @@
           "hintCount": 0
         },
         {
-          "file": "tests/configShow.e2e.test.ts",
+          "file": "hlyr/tests/configShow.e2e.test.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -505,7 +1320,7 @@
           "hintCount": 0
         },
         {
-          "file": "THOUGHTS.md",
+          "file": "hlyr/THOUGHTS.md",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -514,7 +1329,7 @@
           "hintCount": 0
         },
         {
-          "file": "tsconfig.json",
+          "file": "hlyr/tsconfig.json",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -523,7 +1338,7 @@
           "hintCount": 0
         },
         {
-          "file": "tsup.config.ts",
+          "file": "hlyr/tsup.config.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -532,83 +1347,7 @@
           "hintCount": 0
         },
         {
-          "file": "vitest.config.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        }
-      ],
-      "qualityContext": {}
-    },
-    {
-      "package": {
-        "name": "humanlayer",
-        "path": "hlyr"
-      },
-      "lens": {
-        "id": "test",
-        "command": "test"
-      },
-      "execution": {
-        "success": true,
-        "exitCode": 1,
-        "duration": 1496,
-        "timestamp": 1766102299716
-      },
-      "issues": [],
-      "metrics": {
-        "filesAnalyzed": 3,
-        "totalIssues": 0,
-        "issuesBySeverity": {
-          "error": 0,
-          "warning": 0,
-          "info": 0,
-          "hint": 0
-        },
-        "executionTime": 0,
-        "custom": {
-          "totalTests": 0,
-          "passedTests": 0,
-          "failedTests": 0,
-          "skippedTests": 0,
-          "testSuites": 3,
-          "passedSuites": 0,
-          "failedSuites": 3,
-          "passRate": 0,
-          "duration": 0,
-          "slowestTests": [],
-          "snapshot": {
-            "total": 0,
-            "matched": 0,
-            "unmatched": 0,
-            "updated": 0
-          }
-        }
-      },
-      "fileMetrics": [
-        {
-          "file": "src/thoughtsConfig.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "tests/configShow.e2e.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "tests/claudeInit.e2e.test.ts",
+          "file": "hlyr/vitest.config.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -631,8 +1370,8 @@
       "execution": {
         "success": true,
         "exitCode": 2,
-        "duration": 1092,
-        "timestamp": 1766102300808
+        "duration": 1103,
+        "timestamp": 1766446828331
       },
       "issues": [],
       "metrics": {},
@@ -650,12 +1389,12 @@
       "execution": {
         "success": true,
         "exitCode": 1,
-        "duration": 2495,
-        "timestamp": 1766102303305
+        "duration": 2523,
+        "timestamp": 1766446830856
       },
       "issues": [
         {
-          "file": "src/components/internal/ConversationStream/ConversationEventRow.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/ConversationEventRow.tsx",
           "line": 1,
           "column": 1,
           "severity": "error",
@@ -677,7 +1416,7 @@
         }
       ],
       "metrics": {
-        "filesAnalyzed": 1,
+        "filesAnalyzed": 2,
         "totalIssues": 2,
         "issuesBySeverity": {
           "error": 2,
@@ -693,7 +1432,7 @@
       },
       "fileMetrics": [
         {
-          "file": "src/components/internal/ConversationStream/ConversationEventRow.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/ConversationEventRow.tsx",
           "score": 90,
           "issueCount": 1,
           "errorCount": 1,
@@ -705,7 +1444,7 @@
           }
         },
         {
-          "file": ".env.example",
+          "file": "humanlayer-wui/.env.example",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -714,7 +1453,7 @@
           "hintCount": 0
         },
         {
-          "file": ".env.local.example",
+          "file": "humanlayer-wui/.env.local.example",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -723,7 +1462,7 @@
           "hintCount": 0
         },
         {
-          "file": ".gitignore",
+          "file": "humanlayer-wui/.gitignore",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -732,7 +1471,7 @@
           "hintCount": 0
         },
         {
-          "file": ".prettierignore",
+          "file": "humanlayer-wui/.prettierignore",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -741,7 +1480,7 @@
           "hintCount": 0
         },
         {
-          "file": ".prettierrc.js",
+          "file": "humanlayer-wui/.prettierrc.js",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -750,7 +1489,7 @@
           "hintCount": 0
         },
         {
-          "file": ".storybook/main.ts",
+          "file": "humanlayer-wui/.storybook/main.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -759,7 +1498,7 @@
           "hintCount": 0
         },
         {
-          "file": ".storybook/preview-with-addon.tsx",
+          "file": "humanlayer-wui/.storybook/preview-with-addon.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -768,7 +1507,7 @@
           "hintCount": 0
         },
         {
-          "file": ".storybook/preview.tsx",
+          "file": "humanlayer-wui/.storybook/preview.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -777,7 +1516,7 @@
           "hintCount": 0
         },
         {
-          "file": ".storybook/tsconfig.json",
+          "file": "humanlayer-wui/.storybook/tsconfig.json",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -786,7 +1525,7 @@
           "hintCount": 0
         },
         {
-          "file": "bunfig.toml",
+          "file": "humanlayer-wui/bunfig.toml",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -795,7 +1534,7 @@
           "hintCount": 0
         },
         {
-          "file": "CLAUDE.md",
+          "file": "humanlayer-wui/CLAUDE.md",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -804,7 +1543,7 @@
           "hintCount": 0
         },
         {
-          "file": "components.json",
+          "file": "humanlayer-wui/components.json",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -813,7 +1552,7 @@
           "hintCount": 0
         },
         {
-          "file": "docs/API.md",
+          "file": "humanlayer-wui/docs/API.md",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -822,7 +1561,7 @@
           "hintCount": 0
         },
         {
-          "file": "docs/ARCHITECTURE.md",
+          "file": "humanlayer-wui/docs/ARCHITECTURE.md",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -831,7 +1570,7 @@
           "hintCount": 0
         },
         {
-          "file": "docs/DEVELOPER_GUIDE.md",
+          "file": "humanlayer-wui/docs/DEVELOPER_GUIDE.md",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -840,7 +1579,7 @@
           "hintCount": 0
         },
         {
-          "file": "docs/HOTKEYS.md",
+          "file": "humanlayer-wui/docs/HOTKEYS.md",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -849,7 +1588,7 @@
           "hintCount": 0
         },
         {
-          "file": "eslint.config.mjs",
+          "file": "humanlayer-wui/eslint.config.mjs",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -858,7 +1597,7 @@
           "hintCount": 0
         },
         {
-          "file": "happydom.ts",
+          "file": "humanlayer-wui/happydom.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -867,7 +1606,7 @@
           "hintCount": 0
         },
         {
-          "file": "index.html",
+          "file": "humanlayer-wui/index.html",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -876,7 +1615,7 @@
           "hintCount": 0
         },
         {
-          "file": "Makefile",
+          "file": "humanlayer-wui/Makefile",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -885,7 +1624,7 @@
           "hintCount": 0
         },
         {
-          "file": "package-lock.json",
+          "file": "humanlayer-wui/package-lock.json",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -894,7 +1633,7 @@
           "hintCount": 0
         },
         {
-          "file": "package.json",
+          "file": "humanlayer-wui/package.json",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -903,7 +1642,7 @@
           "hintCount": 0
         },
         {
-          "file": "problems.md",
+          "file": "humanlayer-wui/problems.md",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -912,7 +1651,7 @@
           "hintCount": 0
         },
         {
-          "file": "README.md",
+          "file": "humanlayer-wui/README.md",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -921,7 +1660,7 @@
           "hintCount": 0
         },
         {
-          "file": "RELEASE.md",
+          "file": "humanlayer-wui/RELEASE.md",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -930,7 +1669,7 @@
           "hintCount": 0
         },
         {
-          "file": "run-instance.sh",
+          "file": "humanlayer-wui/run-instance.sh",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -939,7 +1678,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/.gitignore",
+          "file": "humanlayer-wui/src-tauri/.gitignore",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -948,7 +1687,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/build.rs",
+          "file": "humanlayer-wui/src-tauri/build.rs",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -957,7 +1696,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/capabilities/default.json",
+          "file": "humanlayer-wui/src-tauri/capabilities/default.json",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -966,7 +1705,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/Cargo.toml",
+          "file": "humanlayer-wui/src-tauri/Cargo.toml",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -975,7 +1714,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons-nightly/128x128.png",
+          "file": "humanlayer-wui/src-tauri/icons-nightly/128x128.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -984,7 +1723,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons-nightly/128x128@2x.png",
+          "file": "humanlayer-wui/src-tauri/icons-nightly/128x128@2x.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -993,7 +1732,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons-nightly/256x256.png",
+          "file": "humanlayer-wui/src-tauri/icons-nightly/256x256.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1002,7 +1741,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons-nightly/32x32.png",
+          "file": "humanlayer-wui/src-tauri/icons-nightly/32x32.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1011,7 +1750,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons-nightly/512x512.png",
+          "file": "humanlayer-wui/src-tauri/icons-nightly/512x512.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1020,7 +1759,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons-nightly/icon.icns",
+          "file": "humanlayer-wui/src-tauri/icons-nightly/icon.icns",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1029,7 +1768,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons-nightly/icon.ico",
+          "file": "humanlayer-wui/src-tauri/icons-nightly/icon.ico",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1038,7 +1777,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons-nightly/icon.png",
+          "file": "humanlayer-wui/src-tauri/icons-nightly/icon.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1047,7 +1786,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons-nightly/Square107x107Logo.png",
+          "file": "humanlayer-wui/src-tauri/icons-nightly/Square107x107Logo.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1056,7 +1795,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons-nightly/Square142x142Logo.png",
+          "file": "humanlayer-wui/src-tauri/icons-nightly/Square142x142Logo.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1065,7 +1804,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons-nightly/Square150x150Logo.png",
+          "file": "humanlayer-wui/src-tauri/icons-nightly/Square150x150Logo.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1074,7 +1813,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons-nightly/Square284x284Logo.png",
+          "file": "humanlayer-wui/src-tauri/icons-nightly/Square284x284Logo.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1083,7 +1822,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons-nightly/Square30x30Logo.png",
+          "file": "humanlayer-wui/src-tauri/icons-nightly/Square30x30Logo.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1092,7 +1831,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons-nightly/Square310x310Logo.png",
+          "file": "humanlayer-wui/src-tauri/icons-nightly/Square310x310Logo.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1101,7 +1840,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons-nightly/Square44x44Logo.png",
+          "file": "humanlayer-wui/src-tauri/icons-nightly/Square44x44Logo.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1110,7 +1849,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons-nightly/Square71x71Logo.png",
+          "file": "humanlayer-wui/src-tauri/icons-nightly/Square71x71Logo.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1119,7 +1858,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons-nightly/Square89x89Logo.png",
+          "file": "humanlayer-wui/src-tauri/icons-nightly/Square89x89Logo.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1128,7 +1867,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons-nightly/StoreLogo.png",
+          "file": "humanlayer-wui/src-tauri/icons-nightly/StoreLogo.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1137,7 +1876,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons/128x128.png",
+          "file": "humanlayer-wui/src-tauri/icons/128x128.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1146,7 +1885,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons/128x128@2x.png",
+          "file": "humanlayer-wui/src-tauri/icons/128x128@2x.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1155,7 +1894,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons/32x32.png",
+          "file": "humanlayer-wui/src-tauri/icons/32x32.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1164,7 +1903,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons/icon.icns",
+          "file": "humanlayer-wui/src-tauri/icons/icon.icns",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1173,7 +1912,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons/icon.ico",
+          "file": "humanlayer-wui/src-tauri/icons/icon.ico",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1182,7 +1921,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons/icon.png",
+          "file": "humanlayer-wui/src-tauri/icons/icon.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1191,7 +1930,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons/Square107x107Logo.png",
+          "file": "humanlayer-wui/src-tauri/icons/Square107x107Logo.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1200,7 +1939,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons/Square142x142Logo.png",
+          "file": "humanlayer-wui/src-tauri/icons/Square142x142Logo.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1209,7 +1948,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons/Square150x150Logo.png",
+          "file": "humanlayer-wui/src-tauri/icons/Square150x150Logo.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1218,7 +1957,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons/Square284x284Logo.png",
+          "file": "humanlayer-wui/src-tauri/icons/Square284x284Logo.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1227,7 +1966,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons/Square30x30Logo.png",
+          "file": "humanlayer-wui/src-tauri/icons/Square30x30Logo.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1236,7 +1975,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons/Square310x310Logo.png",
+          "file": "humanlayer-wui/src-tauri/icons/Square310x310Logo.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1245,7 +1984,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons/Square44x44Logo.png",
+          "file": "humanlayer-wui/src-tauri/icons/Square44x44Logo.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1254,7 +1993,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons/Square71x71Logo.png",
+          "file": "humanlayer-wui/src-tauri/icons/Square71x71Logo.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1263,7 +2002,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons/Square89x89Logo.png",
+          "file": "humanlayer-wui/src-tauri/icons/Square89x89Logo.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1272,7 +2011,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/icons/StoreLogo.png",
+          "file": "humanlayer-wui/src-tauri/icons/StoreLogo.png",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1281,7 +2020,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/src/daemon.rs",
+          "file": "humanlayer-wui/src-tauri/src/daemon.rs",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1290,7 +2029,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/src/lib.rs",
+          "file": "humanlayer-wui/src-tauri/src/lib.rs",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1299,7 +2038,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/src/main.rs",
+          "file": "humanlayer-wui/src-tauri/src/main.rs",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1308,7 +2047,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/tauri.conf.json",
+          "file": "humanlayer-wui/src-tauri/tauri.conf.json",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1317,7 +2056,7 @@
           "hintCount": 0
         },
         {
-          "file": "src-tauri/tauri.nightly.conf.json",
+          "file": "humanlayer-wui/src-tauri/tauri.nightly.conf.json",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1326,7 +2065,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/App.css",
+          "file": "humanlayer-wui/src/App.css",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1335,7 +2074,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/AppStore.archive.test.ts",
+          "file": "humanlayer-wui/src/AppStore.archive.test.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1344,7 +2083,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/AppStore.events.test.ts",
+          "file": "humanlayer-wui/src/AppStore.events.test.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1353,7 +2092,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/AppStore.sync.test.ts",
+          "file": "humanlayer-wui/src/AppStore.sync.test.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1362,7 +2101,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/AppStore.test.ts",
+          "file": "humanlayer-wui/src/AppStore.test.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1371,7 +2110,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/AppStore.ts",
+          "file": "humanlayer-wui/src/AppStore.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1380,7 +2119,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/AppLaunchTracker.tsx",
+          "file": "humanlayer-wui/src/components/AppLaunchTracker.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1389,7 +2128,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/Breadcrumbs.tsx",
+          "file": "humanlayer-wui/src/components/Breadcrumbs.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1398,7 +2137,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/CommandInput.tsx",
+          "file": "humanlayer-wui/src/components/CommandInput.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1407,7 +2146,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/CommandPaletteMenu.test.tsx",
+          "file": "humanlayer-wui/src/components/CommandPaletteMenu.test.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1416,7 +2155,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/CommandPaletteMenu.tsx",
+          "file": "humanlayer-wui/src/components/CommandPaletteMenu.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1425,7 +2164,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/DangerousSkipPermissionsMonitor.tsx",
+          "file": "humanlayer-wui/src/components/DangerousSkipPermissionsMonitor.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1434,7 +2173,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/DebugPanel.tsx",
+          "file": "humanlayer-wui/src/components/DebugPanel.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1443,7 +2182,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/DvdScreensaver.tsx",
+          "file": "humanlayer-wui/src/components/DvdScreensaver.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1452,7 +2191,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ErrorBoundary.tsx",
+          "file": "humanlayer-wui/src/components/ErrorBoundary.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1461,7 +2200,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/FuzzySearchInput.tsx",
+          "file": "humanlayer-wui/src/components/FuzzySearchInput.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1470,7 +2209,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/HotkeyPanel.tsx",
+          "file": "humanlayer-wui/src/components/HotkeyPanel.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1479,7 +2218,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/HotkeyScopeBoundary.tsx",
+          "file": "humanlayer-wui/src/components/HotkeyScopeBoundary.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1488,7 +2227,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/HotkeyScopeDebugger.tsx",
+          "file": "humanlayer-wui/src/components/HotkeyScopeDebugger.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1497,7 +2236,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ArchivedSessionsEmptyState.tsx",
+          "file": "humanlayer-wui/src/components/internal/ArchivedSessionsEmptyState.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1506,7 +2245,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/CodeLayerToastButtons.tsx",
+          "file": "humanlayer-wui/src/components/internal/CodeLayerToastButtons.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1515,7 +2254,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/CodeLayerToaster.stories.tsx",
+          "file": "humanlayer-wui/src/components/internal/CodeLayerToaster.stories.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1524,7 +2263,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/CodeLayerToaster.tsx",
+          "file": "humanlayer-wui/src/components/internal/CodeLayerToaster.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1533,7 +2272,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/CommandToken.tsx",
+          "file": "humanlayer-wui/src/components/internal/CommandToken.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1542,7 +2281,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/ConversationEventRow.stories.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/ConversationEventRow.stories.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1551,7 +2290,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/ConversationStream.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/ConversationStream.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1560,7 +2299,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/ApprovalWrapper.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/ApprovalWrapper.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1569,7 +2308,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/AssistantMessageContent.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/AssistantMessageContent.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1578,7 +2317,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/BashOutputToolCallContent.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/BashOutputToolCallContent.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1587,7 +2326,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/BashToolCallContent.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/BashToolCallContent.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1596,7 +2335,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/DiffViewer/DiffViewer.stories.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/DiffViewer/DiffViewer.stories.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1605,7 +2344,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/DiffViewer/DiffViewer.test.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/DiffViewer/DiffViewer.test.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1614,7 +2353,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/DiffViewer/DiffViewer.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/DiffViewer/DiffViewer.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1623,7 +2362,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/DiffViewToggle.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/DiffViewToggle.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1632,7 +2371,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/EditToolCallContent.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/EditToolCallContent.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1641,7 +2380,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/ExitPlanModeToolCallContent.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/ExitPlanModeToolCallContent.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1650,7 +2389,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/GlobToolCallContent.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/GlobToolCallContent.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1659,7 +2398,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/GrepToolCallContent.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/GrepToolCallContent.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1668,7 +2407,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/index.ts",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/index.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1677,7 +2416,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/integration.test.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/integration.test.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1686,7 +2425,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/LSToolCallContent.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/LSToolCallContent.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1695,7 +2434,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/MCPToolCallContent.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/MCPToolCallContent.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1704,7 +2443,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/MCPToolCallParamPreview.stories.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/MCPToolCallParamPreview.stories.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1713,7 +2452,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/MCPToolCallParamPreview.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/MCPToolCallParamPreview.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1722,7 +2461,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/MultiEditToolCallContent.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/MultiEditToolCallContent.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1731,7 +2470,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/NotebookEditToolCallContent.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/NotebookEditToolCallContent.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1740,7 +2479,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/NotebookReadToolCallContent.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/NotebookReadToolCallContent.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1749,7 +2488,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/ReadToolCallContent.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/ReadToolCallContent.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1758,7 +2497,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/StatusBadge.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/StatusBadge.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1767,7 +2506,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/TaskPreview.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/TaskPreview.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1776,7 +2515,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/TaskToolCallContent.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/TaskToolCallContent.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1785,7 +2524,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/TodoWriteToolCallContent.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/TodoWriteToolCallContent.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1794,7 +2533,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/ToolHeader.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/ToolHeader.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1803,7 +2542,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/types.ts",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/types.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1812,7 +2551,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/UnknownMessageContent.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/UnknownMessageContent.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1821,7 +2560,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/UnknownToolCallContent.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/UnknownToolCallContent.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1830,7 +2569,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/UserMessageContent.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/UserMessageContent.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1839,7 +2578,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/utils/formatters.ts",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/utils/formatters.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1848,7 +2587,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/WebFetchToolCallContent.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/WebFetchToolCallContent.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1857,7 +2596,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/WebSearchToolCallContent.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/WebSearchToolCallContent.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1866,7 +2605,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/EventContent/WriteToolCallContent.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/EventContent/WriteToolCallContent.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1875,7 +2614,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/index.ts",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/index.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1884,7 +2623,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/TaskGroupEventRow.stories.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/TaskGroupEventRow.stories.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1893,7 +2632,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/ConversationStream/TaskGroupEventRow.tsx",
+          "file": "humanlayer-wui/src/components/internal/ConversationStream/TaskGroupEventRow.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1902,7 +2641,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/EmptyState.tsx",
+          "file": "humanlayer-wui/src/components/internal/EmptyState.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1911,7 +2650,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/__tests__/formatToolResult.test.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/__tests__/formatToolResult.test.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1920,7 +2659,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/AutoAcceptIndicator.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/AutoAcceptIndicator.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1929,7 +2668,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/__tests__/markdown-patterns.test.ts",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/__tests__/markdown-patterns.test.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1938,7 +2677,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/ActionButtons.stories.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/ActionButtons.stories.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1947,7 +2686,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/ActionButtons.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/ActionButtons.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1956,7 +2695,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/ActiveSession.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/ActiveSession.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1965,7 +2704,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/ActiveSessionActionButtons.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/ActiveSessionActionButtons.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1974,7 +2713,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/ActiveSessionInput.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/ActiveSessionInput.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1983,7 +2722,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/AdditionalDirectoriesDropdown.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/AdditionalDirectoriesDropdown.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -1992,7 +2731,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/CreateDirectoryDialog.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/CreateDirectoryDialog.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2001,7 +2740,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/CustomDiffViewer.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/CustomDiffViewer.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2010,7 +2749,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/DenyButtons.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/DenyButtons.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2019,7 +2758,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/DiffViewToggle.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/DiffViewToggle.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2028,7 +2767,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/DiscardDraftDialog.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/DiscardDraftDialog.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2037,7 +2776,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/DraftActionButtons.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/DraftActionButtons.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2046,7 +2785,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/DraftLauncherForm.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/DraftLauncherForm.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2055,7 +2794,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/DraftLauncherInput.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/DraftLauncherInput.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2064,7 +2803,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/ErrorBoundary.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/ErrorBoundary.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2073,7 +2812,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/EventMetaInfo.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/EventMetaInfo.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2082,7 +2821,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/FileMentionList.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/FileMentionList.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2091,7 +2830,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/FileMentionNode.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/FileMentionNode.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2100,7 +2839,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/ForkViewModal.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/ForkViewModal.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2109,7 +2848,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/FuzzyFileMentionList.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/FuzzyFileMentionList.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2118,7 +2857,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/MessageContent.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/MessageContent.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2127,7 +2866,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/ModelSelector.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/ModelSelector.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2136,7 +2875,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/OmniSpinner.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/OmniSpinner.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2145,7 +2884,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/ResponseEditor.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/ResponseEditor.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2154,7 +2893,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/ResponseEditorErrorBoundary.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/ResponseEditorErrorBoundary.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2163,7 +2902,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/SlashCommandList.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/SlashCommandList.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2172,7 +2911,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/StatusBar.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/StatusBar.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2181,7 +2920,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/TodoWidget.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/TodoWidget.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2190,7 +2929,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/TokenUsageBadge.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/TokenUsageBadge.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2199,7 +2938,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/components/ToolResultModal.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/components/ToolResultModal.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2208,7 +2947,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/DangerouslySkipPermissionsDialog.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/DangerouslySkipPermissionsDialog.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2217,7 +2956,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/formatToolResult.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/formatToolResult.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2226,7 +2965,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/hooks/useAutoScroll.test.ts",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/hooks/useAutoScroll.test.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2235,7 +2974,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/hooks/useAutoScroll.ts",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/hooks/useAutoScroll.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2244,7 +2983,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/hooks/useSessionActions.ts",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/hooks/useSessionActions.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2253,7 +2992,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/hooks/useSessionApprovals.ts",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/hooks/useSessionApprovals.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2262,7 +3001,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/hooks/useSessionClipboard.ts",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/hooks/useSessionClipboard.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2271,7 +3010,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/hooks/useSessionNavigation.ts",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/hooks/useSessionNavigation.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2280,7 +3019,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/hooks/useTaskGrouping.ts",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/hooks/useTaskGrouping.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2289,7 +3028,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/index.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/index.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2298,7 +3037,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/MarkdownErrorBoundary.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/MarkdownErrorBoundary.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2307,7 +3046,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/MarkdownRenderer.stories.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/MarkdownRenderer.stories.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2316,7 +3055,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/MarkdownRenderer.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/MarkdownRenderer.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2325,7 +3064,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/SessionDetail.stories.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/SessionDetail.stories.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2334,7 +3073,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/SessionDetailRouter.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/SessionDetailRouter.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2343,7 +3082,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionDetail/utils/sessionStatus.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionDetail/utils/sessionStatus.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2352,7 +3091,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionsEmptyState.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionsEmptyState.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2361,7 +3100,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionTable.stories.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionTable.stories.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2370,7 +3109,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/internal/SessionTable.tsx",
+          "file": "humanlayer-wui/src/components/internal/SessionTable.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2379,7 +3118,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/Layout.tsx",
+          "file": "humanlayer-wui/src/components/Layout.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2388,7 +3127,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/MultiDirectoryInput.tsx",
+          "file": "humanlayer-wui/src/components/MultiDirectoryInput.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2397,7 +3136,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/OptInTelemetryModal.tsx",
+          "file": "humanlayer-wui/src/components/OptInTelemetryModal.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2406,7 +3145,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ProviderApiKeyField.tsx",
+          "file": "humanlayer-wui/src/components/ProviderApiKeyField.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2415,7 +3154,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/QuickLauncher.tsx",
+          "file": "humanlayer-wui/src/components/QuickLauncher.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2424,7 +3163,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/QuickLauncherDirectoryInput.tsx",
+          "file": "humanlayer-wui/src/components/QuickLauncherDirectoryInput.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2433,7 +3172,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/RouteErrorBoundary.tsx",
+          "file": "humanlayer-wui/src/components/RouteErrorBoundary.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2442,7 +3181,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/SessionLauncher.tsx",
+          "file": "humanlayer-wui/src/components/SessionLauncher.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2451,7 +3190,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/SettingsDialog.tsx",
+          "file": "humanlayer-wui/src/components/SettingsDialog.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2460,7 +3199,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/StackedCards.tsx",
+          "file": "humanlayer-wui/src/components/StackedCards.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2469,7 +3208,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/TestErrorTrigger.tsx",
+          "file": "humanlayer-wui/src/components/TestErrorTrigger.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2478,7 +3217,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ThemeSelector.tsx",
+          "file": "humanlayer-wui/src/components/ThemeSelector.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2487,7 +3226,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ui/alert.tsx",
+          "file": "humanlayer-wui/src/components/ui/alert.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2496,7 +3235,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ui/badge.tsx",
+          "file": "humanlayer-wui/src/components/ui/badge.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2505,7 +3244,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ui/breadcrumb.tsx",
+          "file": "humanlayer-wui/src/components/ui/breadcrumb.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2514,7 +3253,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ui/button.stories.tsx",
+          "file": "humanlayer-wui/src/components/ui/button.stories.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2523,7 +3262,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ui/button.test.tsx",
+          "file": "humanlayer-wui/src/components/ui/button.test.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2532,7 +3271,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ui/button.tsx",
+          "file": "humanlayer-wui/src/components/ui/button.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2541,7 +3280,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ui/card.tsx",
+          "file": "humanlayer-wui/src/components/ui/card.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2550,7 +3289,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ui/checkbox.tsx",
+          "file": "humanlayer-wui/src/components/ui/checkbox.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2559,7 +3298,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ui/collapsible.tsx",
+          "file": "humanlayer-wui/src/components/ui/collapsible.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2568,7 +3307,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ui/command.tsx",
+          "file": "humanlayer-wui/src/components/ui/command.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2577,7 +3316,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ui/dialog.tsx",
+          "file": "humanlayer-wui/src/components/ui/dialog.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2586,7 +3325,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ui/dropdown-menu.test.tsx",
+          "file": "humanlayer-wui/src/components/ui/dropdown-menu.test.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2595,7 +3334,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ui/dropdown-menu.tsx",
+          "file": "humanlayer-wui/src/components/ui/dropdown-menu.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2604,7 +3343,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ui/input.tsx",
+          "file": "humanlayer-wui/src/components/ui/input.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2613,7 +3352,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ui/keyboard-shortcut.tsx",
+          "file": "humanlayer-wui/src/components/ui/keyboard-shortcut.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2622,7 +3361,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ui/label.tsx",
+          "file": "humanlayer-wui/src/components/ui/label.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2631,7 +3370,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ui/popover.tsx",
+          "file": "humanlayer-wui/src/components/ui/popover.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2640,7 +3379,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ui/scroll-area.tsx",
+          "file": "humanlayer-wui/src/components/ui/scroll-area.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2649,7 +3388,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ui/select.tsx",
+          "file": "humanlayer-wui/src/components/ui/select.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2658,7 +3397,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ui/sensitive-input.tsx",
+          "file": "humanlayer-wui/src/components/ui/sensitive-input.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2667,7 +3406,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ui/sensitive-textarea.tsx",
+          "file": "humanlayer-wui/src/components/ui/sensitive-textarea.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2676,7 +3415,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ui/skeleton.tsx",
+          "file": "humanlayer-wui/src/components/ui/skeleton.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2685,7 +3424,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ui/switch.tsx",
+          "file": "humanlayer-wui/src/components/ui/switch.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2694,7 +3433,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ui/table.tsx",
+          "file": "humanlayer-wui/src/components/ui/table.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2703,7 +3442,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ui/tabs.tsx",
+          "file": "humanlayer-wui/src/components/ui/tabs.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2712,7 +3451,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ui/textarea.tsx",
+          "file": "humanlayer-wui/src/components/ui/textarea.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2721,7 +3460,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/components/ui/tooltip.tsx",
+          "file": "humanlayer-wui/src/components/ui/tooltip.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2730,7 +3469,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/constants/toastIds.ts",
+          "file": "humanlayer-wui/src/constants/toastIds.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2739,7 +3478,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/constants/unsupportedCommands.ts",
+          "file": "humanlayer-wui/src/constants/unsupportedCommands.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2748,7 +3487,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/contexts/ThemeContext.tsx",
+          "file": "humanlayer-wui/src/contexts/ThemeContext.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2757,7 +3496,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/hooks/__tests__/useDaemonConnection.test.ts",
+          "file": "humanlayer-wui/src/hooks/__tests__/useDaemonConnection.test.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2766,7 +3505,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/hooks/hotkeys/scopeManager.ts",
+          "file": "humanlayer-wui/src/hooks/hotkeys/scopeManager.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2775,7 +3514,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/hooks/hotkeys/scopes.ts",
+          "file": "humanlayer-wui/src/hooks/hotkeys/scopes.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2784,7 +3523,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/hooks/index.ts",
+          "file": "humanlayer-wui/src/hooks/index.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2793,7 +3532,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/hooks/useApprovals.ts",
+          "file": "humanlayer-wui/src/hooks/useApprovals.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2802,7 +3541,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/hooks/useAsyncState.ts",
+          "file": "humanlayer-wui/src/hooks/useAsyncState.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2811,7 +3550,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/hooks/useConversation.ts",
+          "file": "humanlayer-wui/src/hooks/useConversation.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2820,7 +3559,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/hooks/useDaemonConnection.ts",
+          "file": "humanlayer-wui/src/hooks/useDaemonConnection.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2829,7 +3568,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/hooks/useDebounce.ts",
+          "file": "humanlayer-wui/src/hooks/useDebounce.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2838,7 +3577,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/hooks/useFileBrowser.test.ts",
+          "file": "humanlayer-wui/src/hooks/useFileBrowser.test.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2847,7 +3586,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/hooks/useFileBrowser.ts",
+          "file": "humanlayer-wui/src/hooks/useFileBrowser.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2856,7 +3595,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/hooks/useFocusTrap.ts",
+          "file": "humanlayer-wui/src/hooks/useFocusTrap.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2865,7 +3604,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/hooks/useHotkeyUnicodeChars.ts",
+          "file": "humanlayer-wui/src/hooks/useHotkeyUnicodeChars.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2874,7 +3613,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/hooks/useKeyboardNavigationProtection.ts",
+          "file": "humanlayer-wui/src/hooks/useKeyboardNavigationProtection.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2883,7 +3622,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/hooks/useLocalStorage.ts",
+          "file": "humanlayer-wui/src/hooks/useLocalStorage.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2892,7 +3631,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/hooks/usePostHogTracking.ts",
+          "file": "humanlayer-wui/src/hooks/usePostHogTracking.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2901,7 +3640,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/hooks/useRecentPaths.ts",
+          "file": "humanlayer-wui/src/hooks/useRecentPaths.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2910,7 +3649,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/hooks/useSessionFilter.ts",
+          "file": "humanlayer-wui/src/hooks/useSessionFilter.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2919,7 +3658,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/hooks/useSessionLauncher.ts",
+          "file": "humanlayer-wui/src/hooks/useSessionLauncher.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2928,7 +3667,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/hooks/useSessions.ts",
+          "file": "humanlayer-wui/src/hooks/useSessions.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2937,7 +3676,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/hooks/useSessionSnapshots.ts",
+          "file": "humanlayer-wui/src/hooks/useSessionSnapshots.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2946,7 +3685,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/hooks/useSubscriptions.ts",
+          "file": "humanlayer-wui/src/hooks/useSubscriptions.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2955,7 +3694,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/jest-dom.d.ts",
+          "file": "humanlayer-wui/src/jest-dom.d.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2964,7 +3703,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/lib/daemon/client.ts",
+          "file": "humanlayer-wui/src/lib/daemon/client.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2973,7 +3712,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/lib/daemon/errors.ts",
+          "file": "humanlayer-wui/src/lib/daemon/errors.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2982,7 +3721,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/lib/daemon/fetch-mock.test.ts",
+          "file": "humanlayer-wui/src/lib/daemon/fetch-mock.test.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -2991,7 +3730,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/lib/daemon/http-client.test.ts",
+          "file": "humanlayer-wui/src/lib/daemon/http-client.test.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3000,7 +3739,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/lib/daemon/http-client.ts",
+          "file": "humanlayer-wui/src/lib/daemon/http-client.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3009,7 +3748,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/lib/daemon/http-config.ts",
+          "file": "humanlayer-wui/src/lib/daemon/http-config.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3018,7 +3757,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/lib/daemon/index.ts",
+          "file": "humanlayer-wui/src/lib/daemon/index.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3027,7 +3766,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/lib/daemon/types.ts",
+          "file": "humanlayer-wui/src/lib/daemon/types.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3036,7 +3775,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/lib/fuzzy-search.ts",
+          "file": "humanlayer-wui/src/lib/fuzzy-search.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3045,7 +3784,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/lib/log-notification.ts",
+          "file": "humanlayer-wui/src/lib/log-notification.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3054,7 +3793,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/lib/logging.ts",
+          "file": "humanlayer-wui/src/lib/logging.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3063,7 +3802,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/lib/preferences.ts",
+          "file": "humanlayer-wui/src/lib/preferences.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3072,7 +3811,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/lib/telemetry/events.ts",
+          "file": "humanlayer-wui/src/lib/telemetry/events.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3081,7 +3820,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/lib/telemetry/posthog-sanitizer.test.ts",
+          "file": "humanlayer-wui/src/lib/telemetry/posthog-sanitizer.test.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3090,7 +3829,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/lib/telemetry/posthog-sanitizer.ts",
+          "file": "humanlayer-wui/src/lib/telemetry/posthog-sanitizer.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3099,7 +3838,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/lib/telemetry/posthog.ts",
+          "file": "humanlayer-wui/src/lib/telemetry/posthog.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3108,7 +3847,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/lib/telemetry/sentry.test.ts",
+          "file": "humanlayer-wui/src/lib/telemetry/sentry.test.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3117,7 +3856,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/lib/telemetry/sentry.ts",
+          "file": "humanlayer-wui/src/lib/telemetry/sentry.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3126,7 +3865,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/lib/utils.ts",
+          "file": "humanlayer-wui/src/lib/utils.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3135,7 +3874,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/lib/version.ts",
+          "file": "humanlayer-wui/src/lib/version.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3144,7 +3883,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/lib/windowTheme.ts",
+          "file": "humanlayer-wui/src/lib/windowTheme.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3153,7 +3892,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/main.tsx",
+          "file": "humanlayer-wui/src/main.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3162,7 +3901,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/pages/DraftSessionPage.tsx",
+          "file": "humanlayer-wui/src/pages/DraftSessionPage.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3171,7 +3910,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/pages/SessionDetailPage.tsx",
+          "file": "humanlayer-wui/src/pages/SessionDetailPage.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3180,7 +3919,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/pages/SessionTablePage.tsx",
+          "file": "humanlayer-wui/src/pages/SessionTablePage.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3189,7 +3928,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/pages/StackedCardsDemo.tsx",
+          "file": "humanlayer-wui/src/pages/StackedCardsDemo.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3198,7 +3937,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/pages/StoreDemo.tsx",
+          "file": "humanlayer-wui/src/pages/StoreDemo.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3207,7 +3946,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/pages/WuiDemo.tsx",
+          "file": "humanlayer-wui/src/pages/WuiDemo.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3216,7 +3955,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/providers/PostHogProvider.tsx",
+          "file": "humanlayer-wui/src/providers/PostHogProvider.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3225,7 +3964,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/router.tsx",
+          "file": "humanlayer-wui/src/router.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3234,7 +3973,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/services/daemon-service.ts",
+          "file": "humanlayer-wui/src/services/daemon-service.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3243,7 +3982,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/services/NotificationService.tsx",
+          "file": "humanlayer-wui/src/services/NotificationService.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3252,7 +3991,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/services/WindowStateService.ts",
+          "file": "humanlayer-wui/src/services/WindowStateService.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3261,7 +4000,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/stores/appStore.ts",
+          "file": "humanlayer-wui/src/stores/appStore.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3270,7 +4009,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/stores/demo/animations/sequences.ts",
+          "file": "humanlayer-wui/src/stores/demo/animations/sequences.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3279,7 +4018,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/stores/demo/composedDemoStore.test.ts",
+          "file": "humanlayer-wui/src/stores/demo/composedDemoStore.test.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3288,7 +4027,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/stores/demo/composedDemoStore.ts",
+          "file": "humanlayer-wui/src/stores/demo/composedDemoStore.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3297,7 +4036,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/stores/demo/demoAppStore.ts",
+          "file": "humanlayer-wui/src/stores/demo/demoAppStore.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3306,7 +4045,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/stores/demo/export/index.tsx",
+          "file": "humanlayer-wui/src/stores/demo/export/index.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3315,7 +4054,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/stores/demo/export/MARKETING_GUIDE.md",
+          "file": "humanlayer-wui/src/stores/demo/export/MARKETING_GUIDE.md",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3324,7 +4063,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/stores/demo/providers/DemoStoreProvider.tsx",
+          "file": "humanlayer-wui/src/stores/demo/providers/DemoStoreProvider.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3333,7 +4072,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/stores/demo/README.md",
+          "file": "humanlayer-wui/src/stores/demo/README.md",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3342,7 +4081,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/stores/demo/slices/appSlice.test.ts",
+          "file": "humanlayer-wui/src/stores/demo/slices/appSlice.test.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3351,7 +4090,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/stores/demo/slices/appSlice.ts",
+          "file": "humanlayer-wui/src/stores/demo/slices/appSlice.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3360,7 +4099,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/stores/demo/slices/launcherSlice.test.ts",
+          "file": "humanlayer-wui/src/stores/demo/slices/launcherSlice.test.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3369,7 +4108,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/stores/demo/slices/launcherSlice.ts",
+          "file": "humanlayer-wui/src/stores/demo/slices/launcherSlice.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3378,7 +4117,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/stores/demo/slices/sessionSlice.test.ts",
+          "file": "humanlayer-wui/src/stores/demo/slices/sessionSlice.test.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3387,7 +4126,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/stores/demo/slices/sessionSlice.ts",
+          "file": "humanlayer-wui/src/stores/demo/slices/sessionSlice.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3396,7 +4135,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/stores/demo/slices/themeSlice.test.ts",
+          "file": "humanlayer-wui/src/stores/demo/slices/themeSlice.test.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3405,7 +4144,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/stores/demo/slices/themeSlice.ts",
+          "file": "humanlayer-wui/src/stores/demo/slices/themeSlice.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3414,7 +4153,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/stores/demo/test-utils.ts",
+          "file": "humanlayer-wui/src/stores/demo/test-utils.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3423,7 +4162,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/stores/DemoAnimator.ts",
+          "file": "humanlayer-wui/src/stores/DemoAnimator.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3432,7 +4171,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/stores/DemoStoreProvider.tsx",
+          "file": "humanlayer-wui/src/stores/DemoStoreProvider.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3441,7 +4180,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/stores/index.ts",
+          "file": "humanlayer-wui/src/stores/index.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3450,7 +4189,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/stores/useDebugStore.ts",
+          "file": "humanlayer-wui/src/stores/useDebugStore.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3459,7 +4198,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/styles/markdown-terminal.css",
+          "file": "humanlayer-wui/src/styles/markdown-terminal.css",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3468,7 +4207,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/styles/react-syntax-highlighter-terminal.css",
+          "file": "humanlayer-wui/src/styles/react-syntax-highlighter-terminal.css",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3477,7 +4216,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/styles/tiptap-editor.css",
+          "file": "humanlayer-wui/src/styles/tiptap-editor.css",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3486,7 +4225,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/test-utils.ts",
+          "file": "humanlayer-wui/src/test-utils.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3495,7 +4234,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/test-utils/tauri-mocks.ts",
+          "file": "humanlayer-wui/src/test-utils/tauri-mocks.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3504,7 +4243,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/test-utils/tiptap.tsx",
+          "file": "humanlayer-wui/src/test-utils/tiptap.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3513,7 +4252,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/types/ui.ts",
+          "file": "humanlayer-wui/src/types/ui.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3522,7 +4261,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/utils/ansiParser.test.tsx",
+          "file": "humanlayer-wui/src/utils/ansiParser.test.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3531,7 +4270,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/utils/ansiParser.tsx",
+          "file": "humanlayer-wui/src/utils/ansiParser.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3540,7 +4279,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/utils/clipboard.ts",
+          "file": "humanlayer-wui/src/utils/clipboard.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3549,7 +4288,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/utils/component-utils.ts",
+          "file": "humanlayer-wui/src/utils/component-utils.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3558,7 +4297,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/utils/enrichment.ts",
+          "file": "humanlayer-wui/src/utils/enrichment.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3567,7 +4306,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/utils/errors.ts",
+          "file": "humanlayer-wui/src/utils/errors.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3576,7 +4315,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/utils/formatting.test.ts",
+          "file": "humanlayer-wui/src/utils/formatting.test.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3585,7 +4324,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/utils/formatting.ts",
+          "file": "humanlayer-wui/src/utils/formatting.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3594,7 +4333,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/utils/selection.ts",
+          "file": "humanlayer-wui/src/utils/selection.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3603,7 +4342,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/utils/sessionStatus.tsx",
+          "file": "humanlayer-wui/src/utils/sessionStatus.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3612,7 +4351,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/utils/undoToast.tsx",
+          "file": "humanlayer-wui/src/utils/undoToast.tsx",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3621,7 +4360,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/utils/validation.ts",
+          "file": "humanlayer-wui/src/utils/validation.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3630,7 +4369,7 @@
           "hintCount": 0
         },
         {
-          "file": "src/vite-env.d.ts",
+          "file": "humanlayer-wui/src/vite-env.d.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3639,7 +4378,7 @@
           "hintCount": 0
         },
         {
-          "file": "testing-library.ts",
+          "file": "humanlayer-wui/testing-library.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3648,7 +4387,7 @@
           "hintCount": 0
         },
         {
-          "file": "tsconfig.json",
+          "file": "humanlayer-wui/tsconfig.json",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3657,7 +4396,7 @@
           "hintCount": 0
         },
         {
-          "file": "tsconfig.node.json",
+          "file": "humanlayer-wui/tsconfig.node.json",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3666,7 +4405,7 @@
           "hintCount": 0
         },
         {
-          "file": "vite.config.ts",
+          "file": "humanlayer-wui/vite.config.ts",
           "score": 100,
           "issueCount": 0,
           "errorCount": 0,
@@ -3689,8 +4428,8 @@
       "execution": {
         "success": true,
         "exitCode": 1,
-        "duration": 1109,
-        "timestamp": 1766102304414
+        "duration": 1132,
+        "timestamp": 1766446831988
       },
       "issues": [],
       "metrics": {
@@ -3717,280 +4456,6 @@
     },
     {
       "package": {
-        "name": "humanlayer-wui",
-        "path": "humanlayer-wui"
-      },
-      "lens": {
-        "id": "test",
-        "command": "test"
-      },
-      "execution": {
-        "success": true,
-        "exitCode": 1,
-        "duration": 2161,
-        "timestamp": 1766102306575
-      },
-      "issues": [],
-      "metrics": {
-        "filesAnalyzed": 25,
-        "totalIssues": 0,
-        "issuesBySeverity": {
-          "error": 0,
-          "warning": 0,
-          "info": 0,
-          "hint": 0
-        },
-        "executionTime": 0,
-        "custom": {
-          "totalTests": 0,
-          "passedTests": 0,
-          "failedTests": 0,
-          "skippedTests": 0,
-          "testSuites": 25,
-          "passedSuites": 0,
-          "failedSuites": 25,
-          "passRate": 0,
-          "duration": 0,
-          "slowestTests": [],
-          "snapshot": {
-            "total": 0,
-            "matched": 0,
-            "unmatched": 0,
-            "updated": 0
-          }
-        }
-      },
-      "fileMetrics": [
-        {
-          "file": "src/stores/demo/slices/themeSlice.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/components/internal/ConversationStream/EventContent/integration.test.tsx",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/lib/telemetry/sentry.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/stores/demo/slices/appSlice.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/stores/demo/slices/launcherSlice.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/stores/demo/slices/sessionSlice.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/lib/daemon/fetch-mock.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/components/ui/button.test.tsx",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/utils/ansiParser.test.tsx",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/components/ui/dropdown-menu.test.tsx",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/utils/formatting.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/stores/demo/composedDemoStore.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/hooks/__tests__/useDaemonConnection.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/components/internal/SessionDetail/__tests__/formatToolResult.test.tsx",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/hooks/useFileBrowser.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/components/internal/ConversationStream/EventContent/DiffViewer/DiffViewer.test.tsx",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/AppStore.archive.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/components/internal/SessionDetail/components/__tests__/markdown-patterns.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/components/CommandPaletteMenu.test.tsx",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/components/internal/SessionDetail/hooks/useAutoScroll.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/AppStore.events.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/AppStore.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/lib/telemetry/posthog-sanitizer.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/AppStore.sync.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        },
-        {
-          "file": "src/lib/daemon/http-client.test.ts",
-          "score": 100,
-          "issueCount": 0,
-          "errorCount": 0,
-          "warningCount": 0,
-          "infoCount": 0,
-          "hintCount": 0
-        }
-      ],
-      "qualityContext": {}
-    },
-    {
-      "package": {
         "name": "codelayer",
         "path": ""
       },
@@ -4001,8 +4466,8 @@
       "execution": {
         "success": true,
         "exitCode": 2,
-        "duration": 1054,
-        "timestamp": 1766102307630
+        "duration": 1152,
+        "timestamp": 1766446833140
       },
       "issues": [],
       "metrics": {},
@@ -4020,8 +4485,8 @@
       "execution": {
         "success": true,
         "exitCode": 1,
-        "duration": 3754,
-        "timestamp": 1766102311387
+        "duration": 3619,
+        "timestamp": 1766446836763
       },
       "issues": [
         {
@@ -4795,26 +5260,6 @@
           "category": "formatting"
         },
         {
-          "file": "hld/e2e/test-rest-api.ts",
-          "line": 1,
-          "column": 1,
-          "severity": "error",
-          "message": "File is not formatted according to Prettier rules",
-          "rule": "prettier",
-          "source": "prettier",
-          "category": "formatting"
-        },
-        {
-          "file": "hld/e2e/test-utils.ts",
-          "line": 1,
-          "column": 1,
-          "severity": "error",
-          "message": "File is not formatted according to Prettier rules",
-          "rule": "prettier",
-          "source": "prettier",
-          "category": "formatting"
-        },
-        {
           "file": "hld/PROTOCOL.md",
           "line": 1,
           "column": 1,
@@ -5156,10 +5601,10 @@
         }
       ],
       "metrics": {
-        "filesAnalyzed": 113,
-        "totalIssues": 113,
+        "filesAnalyzed": 111,
+        "totalIssues": 111,
         "issuesBySeverity": {
-          "error": 113,
+          "error": 111,
           "warning": 0,
           "info": 0,
           "hint": 0
@@ -12973,6 +13418,58 @@
     },
     {
       "package": {
+        "name": "@humanlayer/hld-tests",
+        "path": "hld/e2e"
+      },
+      "lens": {
+        "id": "prettier",
+        "command": "format"
+      },
+      "execution": {
+        "success": true,
+        "exitCode": 1,
+        "duration": 0,
+        "timestamp": 1766446836763
+      },
+      "issues": [
+        {
+          "file": "test-rest-api.ts",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting",
+          "originalPath": "hld/e2e/test-rest-api.ts"
+        },
+        {
+          "file": "test-utils.ts",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting",
+          "originalPath": "hld/e2e/test-utils.ts"
+        }
+      ],
+      "metrics": {
+        "filesAnalyzed": 2,
+        "totalIssues": 2,
+        "issuesBySeverity": {
+          "error": 2,
+          "warning": 0,
+          "info": 0,
+          "hint": 0
+        },
+        "executionTime": 0
+      },
+      "qualityContext": {}
+    },
+    {
+      "package": {
         "name": "@humanlayer/hld-sdk",
         "path": "hld/sdk/typescript"
       },
@@ -12984,7 +13481,7 @@
         "success": true,
         "exitCode": 1,
         "duration": 0,
-        "timestamp": 1766102311387
+        "timestamp": 1766446836763
       },
       "issues": [
         {
@@ -13973,10 +14470,22 @@
   "qualityMetrics": {
     "packages": [
       {
+        "name": "@humanlayer/hld-tests",
+        "path": "hld/e2e",
+        "hexagon": {
+          "tests": 0,
+          "deadCode": 0,
+          "formatting": 0,
+          "linting": 0,
+          "types": 0,
+          "documentation": 0
+        }
+      },
+      {
         "name": "@humanlayer/hld-sdk",
         "path": "hld/sdk/typescript",
         "hexagon": {
-          "tests": 100,
+          "tests": 0,
           "deadCode": 0,
           "formatting": 0,
           "linting": 0,
@@ -13988,10 +14497,10 @@
         "name": "humanlayer",
         "path": "hlyr",
         "hexagon": {
-          "tests": 100,
+          "tests": 0,
           "deadCode": 0,
           "formatting": 100,
-          "linting": 100,
+          "linting": 0,
           "types": 0,
           "documentation": 0
         }
@@ -14000,10 +14509,10 @@
         "name": "humanlayer-wui",
         "path": "humanlayer-wui",
         "hexagon": {
-          "tests": 100,
+          "tests": 0,
           "deadCode": 0,
           "formatting": 99.7,
-          "linting": 100,
+          "linting": 0,
           "types": 100,
           "documentation": 0
         }
@@ -14015,7 +14524,7 @@
           "tests": 0,
           "deadCode": 0,
           "formatting": 74.72,
-          "linting": 100,
+          "linting": 0,
           "types": 0,
           "documentation": 0
         }
